@@ -17,7 +17,7 @@ Implement an authentication system in the following parts:
 At least the following pages and React components must be implemented in the project:
 
 
-| Ruta          | Metodo      | Funcionalidad                                                            | 
+| Route          | Metodo      | Functionality                                                      | 
 | ------------- | ----------- | -----------------------------------------------------------------------  |
 | `/signup`.    | `POST`      | Route that allows me to register in the REST                             |
 | `/signin`.    | `POST`      | Route that allows me to login to the REST API                   |
