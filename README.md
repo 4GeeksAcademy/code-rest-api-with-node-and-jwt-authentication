@@ -1,30 +1,37 @@
-# Autenticación JWT con Node, Express y MongoDB
+# JWT authentication with Node, Express, and MongoDB
 
-Casi todos los sitios web en el mundo tienen autenticación de usuarios, en este proyecto debes realizar una REST API implementando la autenticación de usuarios usando javascript y el framework NodeJS con express y deberas implementar los cambios necesarios para almacenar los datos en la base datos y utilizar MongoDB.
+Almost all Websites in the world have user authentication. In this project, you have to make a REST API implementing the user's authentication using javascript and the NodeJS framework with Express, you also have to implement the necessary changes to store data in the database and use MongoDB.
 
-El uso del code anterior de la api de tareas es recomendada para comenzar el desarrollo, ya que esta cumple con todos los endpoints necesarios y solo debera agregar dos endpoint adicionales y crear un middleware que deberá validar que el usuario sea válido dentro de nuestra REST API.
+Using the previous code of the tasks API is recommended to start the development since it meets all the necessary endpoints, and you will only have to add 2 additional endpoints and create a middleware that will have to validate that the user is valid inside our REST API.
 
-## 🗒️ Instrucciones
+## 🗒️ Instructions
 
-Implementa un sistema de autenticación en las siguientes partes:
+Implement an authentication system in the following steps:
 
-1. **Registro**: El usuario deberá poder colocar un correo, cualquier contraseña y enviar el formulario, un nuevo usuario debe ser creado en la base de datos y el usuario debe ser redireccionado al inicio de sesión luego de esto.
-2. **Inicio de Sesión**: El usuario debe llenar su correo y contraseña y debe ser redirigido a un menu privado luego de que la autenticación sea éxitosa.
-3. **Validación**: Cualquier página considerada "privada" siempre debe estar validando que el usuario actual es válido mediante middleware, si no, debera devolver un mesaje de error que ese endpoint es privado.
+1. **Registration**: the user should be able to put an email, any password and send the form. A new user must be created in the database and the user must be redirected to log in after this.
 
-Al menos las siguientes páginas y componentes de react deben ser implementados en el proyecto:
+2. **Login**: the user must fill in their mail and password, and it must be redirected to a private menu after the authentication is successful.
 
-| Ruta          | Metodo      | Funcionalidad                                                            | 
+3. **Validation**: Any page considered private should always be validating that the current user is validated via middleware, if not, it must return an error message that says that the endpoint is private
+
+At least the following pages and react components must be implemented in the project:
+
+| Route       | Method     | Functionality                                                           |
 | ------------- | ----------- | -----------------------------------------------------------------------  |
-| `/signup`.    | `POST`      | Ruta que me permite registrarme en la REST                             |
-| `/signin`.    | `POST`      | Ruta que me permite iniciar sesión en la REST API                      |
-| `/todos`      | `GET`       | Listado de tareas  (publica)                                             |
-| `/todos`      | `POST`      | Ruta que me permite crear una tarea en la REST API  (privada)          |
-| `/todos/:id`  | `PUT`       | Ruta que me permite actualizar una tarea en la REST API  (privada)     |
-| `/todos/:id`  | `DELETE`    | Ruta que me permite eliminar una tarea en la REST API  (privada)       |
+| `/signup`.    | `POST`      | Route that allows me to register in REST
+| `/signin`.    | `POST`      | Route that allows me to login into the REST API
+| `/todos`      | `GET`       | To-do list (public)                                             |
+| `/todos`      | `POST`      | Route that allows me to create a task in theREST API (private)          |
+| `/todos/:id`  | `PUT`       | Route that allows me to update a task in the REST API (private)    |
+| `/todos/:id`  | `DELETE`    | Route that allows me to delete a task in the REST API (private)    |
 
-## Mas detalles sobre la autenticación:
+## More details about the authentication:
 
-Usualmente un sistema de autenticación es implementado en 4 partes:
+Usually, an authentication system is implemented in 4 parts:
 
-![Diagrama de Autenticación](https://github.com/breatheco-de/jwt-authentication-with-flask-react/blob/main/.learn/login_diagram.jpeg?raw=true)
+![authentication diagram](https://github.com/breatheco-de/jwt-authentication-with-flask-react/blob/main/.learn/login_diagram.jpeg?raw=true)
+
+
+
+
+
